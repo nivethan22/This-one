@@ -102,8 +102,8 @@ jobs:
         run: |
           Write-Host "`n=== RDP ACCESS ==="
           Write-Host "Address: $env:TAILSCALE_IP"
-          Write-Host "Username: RDP"
-          Write-Host "Password: $(echo $env:RDP_CREDS)"
+          Write-Host "Username: Win11"
+          Write-Host "Password: 12345678910Nive@"
           Write-Host "==================`n"
           
           # Keep runner active indefinitely (or until manually cancelled)
@@ -111,4 +111,3 @@ jobs:
               Write-Host "[$(Get-Date)] RDP Active - Use Ctrl+C in workflow to terminate"
               Start-Sleep -Seconds 300
           }
-
